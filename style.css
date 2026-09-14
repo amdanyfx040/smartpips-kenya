@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+:root {
+  --bg: #07111f;
+  --panel: #0f1e32;
+  --text: #f4f7fb;
+  --muted: #a8b5c7;
+  --accent: #39d98a;
+  --border: #223650;
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 7%;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(7,17,31,.96);
+  z-index: 5;
+}
+.brand { font-size: 1.3rem; font-weight: 800; }
+.brand span { color: var(--accent); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--accent); }
+main { max-width: 1150px; margin: auto; }
+.hero { padding: 100px 7% 80px; }
+.eyebrow {
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+h1 { font-size: clamp(2.4rem, 7vw, 5.2rem); line-height: 1.05; margin: 15px 0 25px; }
+h1 span { color: var(--accent); }
+h2 { font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.15; margin: 10px 0 16px; }
+h3 { margin: 12px 0; }
+.hero-text, .section-heading p, .split p, .contact p { color: var(--muted); max-width: 650px; }
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 20px;
+  background: var(--accent);
+  color: #062014;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section { padding: 65px 7%; }
+.section-heading { margin-bottom: 28px; }
+.signal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.signal-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+.card-top, .meta { display: flex; justify-content: space-between; gap: 12px; }
+.card-top { color: var(--accent); font-weight: 800; }
+.badge { color: var(--muted); font-size: .75rem; }
+.signal-card p { color: var(--muted); }
+.meta { border-top: 1px solid var(--border); padding-top: 14px; font-size: .85rem; color: var(--muted); }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; border-top: 1px solid var(--border); }
+.contact { border-top: 1px solid var(--border); }
+.contact-message { margin-top: 15px; color: var(--accent) !important; }
+footer { text-align: center; padding: 35px 7%; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+@media (max-width: 750px) {
+  .topbar { align-items: flex-start; flex-direction: column; }
+  .hero { padding-top: 65px; }
+  .signal-grid, .split { grid-template-columns: 1fr; }
+}
