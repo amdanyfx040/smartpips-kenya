@@ -27,9 +27,10 @@ The sample signals are educational demonstrations only. Forex trading carries ri
   <h2>Join SmartPips Kenya Learners</h2>
   <p>Learn forex trading, chart analysis and risk management.</p>
 
-  <p>WhatsApp: 0753689132</p>
+  <p> kiprop strategy</p>
 
   <a href="https://wa.me/254753689132">
     Join Learners on WhatsApp
   </a>
 </section>
+<div> sure signals
